@@ -109,7 +109,7 @@ def verify():
     if not username: return jsonify(error='Username required'),400
     db=get_db(); db.execute('INSERT OR IGNORE INTO users(username) VALUES(?)',(username,)); db.execute('UPDATE users SET verified=? WHERE username=?',(value,username)); db.commit()
     return jsonify(ok=True,verified=bool(value))
+init_db()
 
 if __name__ == '__main__':
-    init_db()
     app.run(host='0.0.0.0', port=int(os.getenv('PORT','5000')), debug=False)
