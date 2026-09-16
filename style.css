@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1117;
+    color: #fff;
+}
+
+.container {
+    width: min(700px, 94%);
+    margin: 30px auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+    background: #5865f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    color: #9ca3af;
+}
+
+.upload-box,
+.files-section {
+    background: #181b24;
+    border: 1px solid #292e3b;
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+.select-btn,
+.upload-btn {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.select-btn {
+    display: block;
+    text-align: center;
+    background: #252a36;
+    margin-bottom: 12px;
+}
+
+.upload-btn {
+    background: #5865f2;
+    color: white;
+}
+
+.upload-btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.file-info {
+    padding: 14px;
+    background: #11141b;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.file-info strong,
+.file-info span {
+    display: block;
+}
+
+.file-info span {
+    margin-top: 6px;
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 7px;
+    font-size: 13px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background: #292e3b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: #5865f2;
+    transition: width .2s;
+}
+
+.result {
+    margin-top: 15px;
+    padding: 15px;
+    background: #11141b;
+    border-radius: 12px;
+    word-break: break-all;
+}
+
+.result a {
+    color: #8ea1ff;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.file-item {
+    padding: 13px;
+    background: #11141b;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.file-item small {
+    color: #9ca3af;
+}
+
+.hidden {
+    display: none;
+}
